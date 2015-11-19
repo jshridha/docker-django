@@ -9,7 +9,8 @@ RUN apt-get update && \
 RUN pip install wheel && \
     pip install numpy && \
     pip install scipy && \
-    pip install Pillow
+    pip install Pillow && \
+	pip install celery[redis]
 
 VOLUME /usr/src/app
 
