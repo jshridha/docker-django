@@ -14,7 +14,9 @@ RUN pip install wheel && \
 
 ADD *.conf /etc/supervisor/conf.d/
 
-ADD startup.sh /root
+ADD startup.sh /root/startup.sh
+
+RUN chmod +x /root/startup.sh
 	
 VOLUME /usr/src/app
 
