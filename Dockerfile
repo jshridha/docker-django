@@ -12,8 +12,12 @@ RUN pip install wheel && \
     pip install Pillow && \
 	pip install celery[redis]
 
+ADD *.conf /etc/supervisor/conf.d/
+
+ADD startup.sh /root
+	
 VOLUME /usr/src/app
 
 WORKDIR /usr/src/app
 
-CMD ["python", "-u", "manage.py", "runserver", "0.0.0.0:8000"]
+CMD ["/root/startup.sh"]
