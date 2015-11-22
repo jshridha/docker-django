@@ -10,7 +10,8 @@ RUN pip install wheel && \
     pip install numpy && \
     pip install scipy && \
     pip install Pillow && \
-	pip install celery[redis]
+	pip install celery[redis] && \
+	pip install django-bootstrap3
 
 ADD *.conf /etc/supervisor/conf.d/
 
