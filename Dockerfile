@@ -1,4 +1,4 @@
-FROM django:1.8.6-python3
+FROM django:1.8.7-python3
 
 RUN apt-get update && \
     apt-get install -y build-essential && \
