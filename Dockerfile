@@ -12,7 +12,8 @@ RUN pip install wheel && \
     pip install Pillow && \
 	pip install celery[redis] && \
 	pip install django-bootstrap3 && \
-	pip install django-user-accounts
+	pip install django-user-accounts && \
+	pip install djangorestframework
 
 ADD *.conf /etc/supervisor/conf.d/
 
