@@ -1,4 +1,4 @@
-FROM django:1.8.7-python3
+FROM django:1.9-python3
 
 RUN apt-get update && \
     apt-get install -y build-essential && \
@@ -12,7 +12,7 @@ RUN pip install wheel && \
     pip install Pillow && \
 	pip install celery[redis] && \
 	pip install django-bootstrap3 && \
-	pip install django-user-accounts && \
+	pip install git+https://github.com/pinax/django-user-accounts.git@3200318e208b5f3a3f2fd01e6c1af19f7f2aaa8e && \
 	pip install djangorestframework
 
 ADD *.conf /etc/supervisor/conf.d/
