@@ -1,5 +1,5 @@
 # docker-django
-This docker is used to run django 1.8.7 on python3.
+This docker is used to run django 1.9 on python3.
 It comes prebuilt with numpy and scipy to avoid forcing the user to spend time building it themselves. 
 
 # PULL
