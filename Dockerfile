@@ -2,7 +2,7 @@ FROM django:1.9-python3
 
 RUN apt-get update && \
     apt-get install -y build-essential && \
-    apt-get install -y libblas-dev liblapack-dev libatlas-base-dev gfortran libjpeg-dev supervisor && \
+    apt-get install -y libblas-dev liblapack-dev libatlas-base-dev gfortran libjpeg-dev supervisor git && \
     apt-get -y clean && \
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
