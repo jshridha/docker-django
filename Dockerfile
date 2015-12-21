@@ -9,14 +9,7 @@ RUN apt-get update && \
 
 RUN pip install wheel && \
     pip install numpy && \
-    pip install scipy && \
-    pip install Pillow && \
-	pip install celery[redis] && \
-	pip install django-bootstrap3==6.2.2 && \
-	pip install django-user-accounts==1.3.1 && \
-	pip install djangorestframework==3.3.2 && \
-	pip install django-debug-toolbar==1.4 && \
-	pip install django-angular==0.7.15
+    pip install scipy
 
 ADD *.conf /etc/supervisor/conf.d/
 
